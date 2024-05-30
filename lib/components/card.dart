@@ -6,7 +6,8 @@ class Cards extends StatelessWidget {
   final String subtitre;
   final String butex;
   final String butsub;
-  Cards({super.key, required this.path, required this.titre, required this.subtitre, required this.butex, required this.butsub});
+  final String type;
+  Cards({super.key, required this.path, required this.titre, required this.subtitre, required this.butex, required this.butsub, required this.type});
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +21,7 @@ class Cards extends StatelessWidget {
               leading: Container(width: 80, decoration: BoxDecoration(image: DecorationImage(image: AssetImage(path), fit: BoxFit.cover)),),
               title: Text(titre, style: TextStyle(fontWeight: FontWeight.w700),),
               subtitle: Text(subtitre),
+              trailing: Text(type, style: TextStyle(color: Config.colors.tertiaire),),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,

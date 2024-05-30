@@ -8,5 +8,5 @@ class _Colors{
   final primary=Color(0xFFFFA500);
   final secondary=Color(0xFFF5DEB3);
   final tertiaire=Color(0xFF7F7F7F);
-  final rust=Color(0xFFC36241);
+  final rust=Color(0xFFEFB261);
 }

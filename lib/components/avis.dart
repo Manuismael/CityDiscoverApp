@@ -14,11 +14,11 @@ class Avis extends StatelessWidget {
     return Container(
       child: Row(
         children: [
-          Icon(Icons.star, color: fill0,),
-          Icon(Icons.star, color: fill1,),
-          Icon(Icons.star, color: fill2,),
-          Icon(Icons.star, color: fill3,),
-          Icon(Icons.star, color: fill4,),
+          Icon(Icons.star, color: fill0,size: 20,),
+          Icon(Icons.star, color: fill1,size: 20,),
+          Icon(Icons.star, color: fill2,size: 20,),
+          Icon(Icons.star, color: fill3,size: 20,),
+          Icon(Icons.star, color: fill4,size: 20,),
         ],
       ),
     );

@@ -21,9 +21,9 @@ class AvisCard extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             ListTile(
-              leading: Image(image: AssetImage(path)),
+              leading: Container(width: 80, decoration: BoxDecoration(image: DecorationImage(image: AssetImage(path), fit: BoxFit.cover)),),
               title: Text(titre, style: TextStyle(fontWeight: FontWeight.w700),),
-              subtitle: subtitre,
+              subtitle: Container(child: Row(children: [Text("Avis: ", style: TextStyle(color: Config.colors.tertiaire),), subtitre],),),
               trailing: Text(third),
             ),
             Row(
